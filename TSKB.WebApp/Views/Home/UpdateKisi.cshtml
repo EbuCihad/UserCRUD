@@ -1,0 +1,57 @@
+﻿@using TSKB.Entities
+@model Kisi
+
+@{
+    ViewBag.Title = "UpdateKisi";
+}
+
+<h2>UpdateKisi</h2>
+
+
+@using (Html.BeginForm())
+{
+    <form>
+        <div class="form-group">
+            <label>İSİM</label>
+
+            @Html.TextBoxFor(x => x.isim, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            <label>SOYİSİM</label>
+            @Html.TextBoxFor(x => x.soyisim, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            <label>DOĞUM TARİHİ</label>
+            @Html.TextBoxFor(x => x.dogumTarihi, Model.dogumTarihi.ToString(), new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            <label>MAAŞ</label>
+            @Html.TextBoxFor(x => x.maas, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            <label>STATÜ</label>
+            @Html.EnumDropDownListFor(Kisi => Kisi.Statu, "Seçiniz", new { @class = "form-control dropdown" })
+        </div>
+        <div class="form-group">
+            <label>ŞUBE SEÇ</label>
+            @Html.DropDownList("subedrop", (SelectList)ViewBag.unit, "Lütfen şube seçiniz ", new { @class = "form-control dropdown" })
+        </div>
+        <div class="form-group">
+            <label>DEPARTMAN SEÇ</label>
+            @Html.DropDownList("departmandrop", (SelectList)ViewBag.unit1, "Lütfen departman seçiniz ", new { @class = "form-control dropdown" })
+        </div>
+        <div class="form-group">
+            <label>EKİP SEÇ</label>
+            @Html.DropDownList("ekipdrop", (SelectList)ViewBag.unit2,"Lütfen ekip seçiniz ", new { @class = "form-control dropdown" })
+        </div>
+
+
+        @*<div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>*@
+        <button type="submit" class="btn btn-primary">GÜNCELLE</button>
+    </form>
+}
+
+

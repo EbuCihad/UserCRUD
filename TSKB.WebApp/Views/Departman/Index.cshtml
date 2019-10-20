@@ -1,0 +1,44 @@
+﻿@using TSKB.Entities
+@using TSKB.BusinessLayer
+@model Departman
+@{
+    DepartmanManager dm = new DepartmanManager();
+    List<Departman> list = dm.GetDepartmans();
+    ViewBag.Title = "Index";
+}
+
+
+<table class="table">
+    <thead>
+        @if (ViewBag.dolu.ToString() == "1")
+        {
+
+            <tr>
+                <th scope="col" style="text-align:center;color:red">SİLME İŞLEMİ BAŞARISIZ, ÖNCE DEPARTMANIN  EKİP VE ÇALIŞANLARINI SİLMELİSİNİZ</th>
+            </tr>
+        }
+        <tr>
+            <th scope="col">DEPARTMAN İSİM</th>
+            <th>
+                <a href="/Departman/AddDepartman" class="list-group-item">YENİ DEPARTMAN EKLE</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (Departman x in list)
+        {
+            <tr>
+                <th scope="row">@x.isim</th>
+
+
+                <td>
+                    @Html.ActionLink("Güncelle", "UpdateDepartman", "Departman", new { Id = x.Id }, null) |
+                    @Html.ActionLink("Sil", "DeleteDepartman", "Departman", new { Id = x.Id }, null)
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

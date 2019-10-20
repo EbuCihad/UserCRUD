@@ -1,0 +1,20 @@
+﻿@using TSKB.Entities
+@model Sube
+@{
+    ViewBag.Title = "UpdateSube";
+}
+
+<h2>UpdateSube</h2>
+
+
+@using (Html.BeginForm())
+{
+    <form>
+        <div class="form-group">
+            <label>İSİM</label>
+            @Html.TextBoxFor(x => x.isim, new { @class = "form-control" })
+        </div>
+        <button type="submit" class="btn btn-primary">GÜNCELLE</button>
+    </form>
+}
+

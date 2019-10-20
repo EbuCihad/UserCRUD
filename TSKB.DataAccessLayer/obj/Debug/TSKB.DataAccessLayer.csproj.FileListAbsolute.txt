@@ -1,0 +1,16 @@
+C:\Users\ebuci\source\repos\TSKB\TSKB.DataAccessLayer\bin\Debug\TSKB.DataAccessLayer.dll.config
+C:\Users\ebuci\source\repos\TSKB\TSKB.DataAccessLayer\bin\Debug\TSKB.DataAccessLayer.dll
+C:\Users\ebuci\source\repos\TSKB\TSKB.DataAccessLayer\bin\Debug\TSKB.DataAccessLayer.pdb
+C:\Users\ebuci\source\repos\TSKB\TSKB.DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\ebuci\source\repos\TSKB\TSKB.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ebuci\source\repos\TSKB\TSKB.DataAccessLayer\bin\Debug\FakeData.dll
+C:\Users\ebuci\source\repos\TSKB\TSKB.DataAccessLayer\bin\Debug\TSKB.Entities.dll
+C:\Users\ebuci\source\repos\TSKB\TSKB.DataAccessLayer\bin\Debug\TSKB.Entities.pdb
+C:\Users\ebuci\source\repos\TSKB\TSKB.DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\ebuci\source\repos\TSKB\TSKB.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ebuci\source\repos\TSKB\TSKB.DataAccessLayer\bin\Debug\FakeData.pdb
+C:\Users\ebuci\source\repos\TSKB\TSKB.DataAccessLayer\obj\Debug\TSKB.DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\ebuci\source\repos\TSKB\TSKB.DataAccessLayer\obj\Debug\TSKB.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ebuci\source\repos\TSKB\TSKB.DataAccessLayer\obj\Debug\TSKB.DataAccessLayer.csproj.CopyComplete
+C:\Users\ebuci\source\repos\TSKB\TSKB.DataAccessLayer\obj\Debug\TSKB.DataAccessLayer.dll
+C:\Users\ebuci\source\repos\TSKB\TSKB.DataAccessLayer\obj\Debug\TSKB.DataAccessLayer.pdb

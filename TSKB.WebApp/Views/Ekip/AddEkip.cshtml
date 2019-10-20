@@ -1,0 +1,31 @@
+﻿@using TSKB.Entities
+@model Ekip
+@{
+    ViewBag.Title = "AddKisi";
+}
+
+@using (Html.BeginForm())
+{
+    <form>
+        <div class="form-group">
+            <label>İSİM</label>
+
+            @Html.TextBoxFor(x => x.isim, new { @class = "form-control" })
+        </div>
+       
+        <div class="form-group">
+            <label>ŞUBE SEÇ</label>
+            @Html.DropDownList("subedrop", (SelectList)ViewBag.unit, "Lütfen şube seçiniz", new { @class = "form-control dropdown" })
+        </div>
+        <div class="form-group">
+            <label>DEPARTMAN SEÇ</label>
+            @Html.DropDownList("departmandrop", (SelectList)ViewBag.unit1, "Lütfen departman seçiniz", new { @class = "form-control dropdown" })
+        </div>
+        
+
+
+        <button type="submit" class="btn btn-primary">KAYDET</button>
+    </form>
+}
+
+

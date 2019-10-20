@@ -1,0 +1,48 @@
+﻿@using TSKB.Entities
+@using TSKB.BusinessLayer
+@model Kisi
+@{
+    KisiManager km = new KisiManager();
+    List<Kisi> list = km.GetKisis();
+    ViewBag.Title = "Index";
+}
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">İSİM</th>
+            <th scope="col">SOYİSİM</th>
+            <th scope="col">DOGUM TARİHİ</th>
+            <th scope="col">MAAS</th>
+            <th scope="col">STATU</th>
+            <th scope="col">SUBE</th>
+            <th scope="col">DEPARTMAN</th>
+            <th scope="col">EKİP</th>
+            <th scope="col">
+                <a href="/Home/AddKisi" class="list-group-item">YENİ KİŞİ EKLE</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Kisi x in list)
+        {
+            <tr>
+                <th scope="row">@x.isim</th>
+                <td>@x.soyisim</td>
+                <td>@x.dogumTarihi</td>
+                <td>@x.maas</td>
+                <td>@x.Statu</td>
+                <td>@x.Sube.isim</td>
+                <td>@x.Departman.isim</td>
+                <td>@x.Ekip.isim</td>
+                <td>
+                    @Html.ActionLink("Güncelle","UpdateKisi",new { Id=x.Id}) |
+                    @Html.ActionLink("Sil","DeleteKisi",new { Id=x.Id}) 
+                  
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

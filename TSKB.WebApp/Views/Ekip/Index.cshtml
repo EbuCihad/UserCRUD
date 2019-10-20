@@ -1,0 +1,43 @@
+﻿@using TSKB.Entities
+@using TSKB.BusinessLayer
+@model Ekip
+@{
+    EkipManager em = new EkipManager();
+    List<Ekip> list = em.GetEkips();
+    ViewBag.Title = "Index";
+}
+
+
+
+<table class="table">
+    <thead>
+        @if (ViewBag.dolu.ToString() == "1")
+        {
+
+            <tr>
+                <th scope="col" style="text-align:center;color:red">SİLME İŞLEMİ BAŞARISIZ, ÖNCE DEPARTMANIN  EKİP VE ÇALIŞANLARINI SİLMELİSİNİZ</th>
+            </tr>
+        }
+       
+        <tr>
+            <th scope="col">İSİM</th>
+            <th>
+                <a href="/Ekip/AddEkip" class="list-group-item">YENİ EKİP EKLE</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Ekip x in list)
+        {
+            <tr>
+                <th scope="row">@x.isim</th>
+                
+                <td>
+                    @Html.ActionLink("Güncelle", "UpdateEkip", new { Id = x.Id }) |
+                    @Html.ActionLink("Sil", "DeleteEkip", new { Id = x.Id })
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

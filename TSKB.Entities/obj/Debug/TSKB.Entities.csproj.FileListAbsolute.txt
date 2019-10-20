@@ -1,0 +1,6 @@
+C:\Users\ebuci\source\repos\TSKB\TSKB.Entities\bin\Debug\TSKB.Entities.dll
+C:\Users\ebuci\source\repos\TSKB\TSKB.Entities\bin\Debug\TSKB.Entities.pdb
+C:\Users\ebuci\source\repos\TSKB\TSKB.Entities\obj\Debug\TSKB.Entities.csproj.CoreCompileInputs.cache
+C:\Users\ebuci\source\repos\TSKB\TSKB.Entities\obj\Debug\TSKB.Entities.dll
+C:\Users\ebuci\source\repos\TSKB\TSKB.Entities\obj\Debug\TSKB.Entities.pdb
+C:\Users\ebuci\source\repos\TSKB\TSKB.Entities\obj\Debug\TSKB.Entities.csprojAssemblyReference.cache
